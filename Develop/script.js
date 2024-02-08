@@ -22,8 +22,13 @@ if (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial
 }
 
 //string variables containing the possible characters
+var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numberChars = "0123456789";
+var specialChars = "!@#$%^&*()_+{}:?><,.;['/']"
 
 //var to store the characters
+var possibleChars = "";
 
 //append character based on the user input
 
