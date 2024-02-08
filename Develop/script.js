@@ -16,6 +16,10 @@ var includeNumbers = confirm("Do you want to include numeric letters?");
 var includeSpecial = confirm("Do you want to include special letters?");
 
 //check if at least one character type is selected
+if (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial){
+  alert("At least one character type must be chosen.");
+  return "";
+}
 
 //string variables containing the possible characters
 
