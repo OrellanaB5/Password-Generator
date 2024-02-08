@@ -2,9 +2,13 @@
 var generateBtn = document.querySelector("#generate");
 
 //make function for password 
-
+function generatePassword() { 
+  var passwordLength = prompt("How many characters do you want your password to be? (8-32 characters)");
 //check if password is long enough
-
+if (isNaN(passwordLength) || passwordLength <8 || passwordLength > 32){
+  alert ("Please make a password between 8 and 32 characters.");
+  return "";
+}
 //confirm if the charcters needed are included
 
 //check if at least one character type is selected
