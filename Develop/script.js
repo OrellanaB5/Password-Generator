@@ -31,10 +31,22 @@ var specialChars = "!@#$%^&*()_+{}:?><,.;['/']"
 var possibleChars = "";
 
 //append character based on the user input
+if (includeLowercase) possibleChars += lowercaseChars;
+if (includeUppercase) possibleChars += uppercaseChars;
+if (includeNumbers) possibleChars += numberChars;
+if (includeSpecial) possibleChars += specialChars;
 
 //var to store the password
+var finalPassword = "";
 
 //loop to generate the password
+for (var i = 0; i < passwordLength; i++) {
+  var randomIndex = Math.floor(Math.random() * possibleChars.length);
+  finalPassword += possibleChars[randomIndex];
+}
+
+return finalPassword;
+}
 
 
 // Write password to the #password input
