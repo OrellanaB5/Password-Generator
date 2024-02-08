@@ -9,7 +9,11 @@ if (isNaN(passwordLength) || passwordLength <8 || passwordLength > 32){
   alert ("Please make a password between 8 and 32 characters.");
   return "";
 }
-//confirm if the charcters needed are included
+//confirm if the charcters use wants to use 
+var includeLowercase = confirm("Do you want to include lowercase letters?");
+var includeUppercase = confirm("Do you want to include Uppercase letters?");
+var includeNumbers = confirm("Do you want to include numeric letters?");
+var includeSpecial = confirm("Do you want to include special letters?");
 
 //check if at least one character type is selected
 
